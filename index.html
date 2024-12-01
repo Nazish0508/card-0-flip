@@ -11,10 +11,15 @@
   </style>
 </head>
 <body>
-  <h1 class="animate__animated animate__flipInX">Card-O-Flip</h1>
-  <img src="images\OIP (1).jpeg" class="animate__animated animate__flip" alt="Joey and Marky">
-  <button id="str-btn" onclick="startGame()">Start</button>
+  <div id="start-screen">
+    <h1 id="title" class="animate__animated">Card-O-Flip</h1>
+    <img id="homeimg" src="images\OIP (1).jpeg" class="animate__animated" alt="Joey and Marky">
+    <button class="animate__animated" id="str-btn">Start</button>
+  </div>
 
+  <div class="animate__animated hidden game-screen">
+    <h1 class="startgame animate__animated">Game started</h1>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

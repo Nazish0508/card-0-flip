@@ -1,36 +1,93 @@
+/* General body styling */
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
 }
 
-h1 {
+/* Center alignment container */
+#start-screen {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title styling */
+#title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
   color: #333;
+  position: relative;
+  top: -20px; /* Moves the title slightly upward */
 }
 
-img {
-  width: 250px;
+/* Image styling */
+#homeimg {
+  width: 300px; /* Adjust this size as needed */
   height: auto;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-button {
+/* Hover effect for image */
+#homeimg:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Button styling */
+#str-btn {
+  font-size: 1.2rem;
   padding: 10px 20px;
-  font-size: 18px;
-  color: #fff;
-  background-color: #007bff;
   border: none;
   border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
 }
 
-button:hover {
-  animation: bounce;
-  animation-duration: 2s;
+/* Button hover effect */
+#str-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
 }
+
+/* Button focus effect */
+#str-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+/* Styling for hidden elements */
+
+.game-screen{
+  width: 0;
+  height: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.startgame{
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
 
